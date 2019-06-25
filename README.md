@@ -1,2 +1,2 @@
-# 30-seconds-of-interviews
-30-seconds-of-interviews 中文版
+# hyperapp-starter-kit
+🎉 a boilerplate hyperapp application with Webpack4
