@@ -42,7 +42,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|gif|jpe?g|svg)$/i,
+        test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
             loader: "url-loader",
@@ -54,17 +54,17 @@ module.exports = {
           }
         ]
       },
-      // {
-      //     test: /\.(eot|svg|ttf|woff2?)$/,
-      //     use: [{
-      //         loader: 'file-loader',
-      //         options: {
-      //             name: '[name]-[hash:7].[ext]',
-      //             outputPath: 'assets/fonts'
-      //         }
-      //     }]
+      {
+          test: /\.(eot|svg|ttf|woff2?)$/,
+          use: [{
+              loader: 'file-loader',
+              options: {
+                  name: '[name]-[hash:7].[ext]',
+                  outputPath: 'assets/fonts'
+              }
+          }]
 
-      // },
+      },
       {
         test: /\.s?css$/,
         use: [

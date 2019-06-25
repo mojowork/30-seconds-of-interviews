@@ -63,18 +63,18 @@ let config = {
           }
         ]
       },
-      // {
-      //     test: /\.(eot|svg|ttf|woff2?)$/,
-      //     use: [{
-      //         loader: 'file-loader',
-      //         options: {
-      //             name: '[name]-[hash:7].[ext]',
-      //             outputPath: 'assets/fonts'
-      //         }
-      //     }]
-      // },
       {
-        test: /\.(png|gif|jpe?g|svg)$/i,
+          test: /\.(eot|svg|ttf|woff2?)$/,
+          use: [{
+              loader: 'file-loader',
+              options: {
+                  name: '[name]-[hash:7].[ext]',
+                  outputPath: 'assets/fonts'
+              }
+          }]
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
             loader: "url-loader",
