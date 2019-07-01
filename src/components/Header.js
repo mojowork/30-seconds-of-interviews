@@ -12,7 +12,16 @@ export default () => (
         rel="noopener"
       >
         <Icon class="Header__github-star" name="star" />
-        Star on GitHub
+        关注英文原版
+      </a>
+      <a
+        class="btn Header__github"
+        href="https://github.com/mojowork/30-seconds-of-interviews"
+        target="_blank"
+        rel="noopener"
+      >
+        <Icon class="Header__github-star" name="star" />
+        关注中文版本
       </a>
     </div>
   </div>

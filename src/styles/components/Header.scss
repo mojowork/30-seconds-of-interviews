@@ -34,7 +34,7 @@
     padding-bottom: 75px;
     margin-top: -35px;
     text-align: center;
-
+    
     &::after {
       content: "";
       background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxLjQxNCI+PHBhdGggZD0iTTEyIDEybDEyIDEySDBsMTItMTJ6IiBmaWxsPSIjZjZmN2ZkIi8+PC9zdmc+);
@@ -54,6 +54,10 @@
     color: #6874ff;
     padding: 12px 24px;
     white-space: nowrap;
+    
+    &:first-child{
+      margin-right: 75px;
+    }
 
     &:hover {
       background: #6874ff;

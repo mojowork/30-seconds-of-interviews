@@ -51,6 +51,8 @@ export const TAG_NAMES = {
   node: "Node",
   security: "Security",
   react: "React",
+  // vue: "Vue",
+  // algorithm: 'Algorithm',
   all: "all"
 }
 

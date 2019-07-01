@@ -10,9 +10,9 @@ export default () => (state, actions) => (
     <button
       class="btn Dropdown__button"
       onclick={() => actions.filter.onSortDirectionChange()}
-      data-tooltip={`${
-        state.filter.sortAscending ? "Ascending" : "Descending"
-      } order`}
+      data-tooltip={`我是${
+        state.filter.sortAscending ? "菜鸟" : "高手"
+      }`}
     >
       <span>Expertise</span>
       <i

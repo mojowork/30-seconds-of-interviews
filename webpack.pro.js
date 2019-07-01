@@ -16,7 +16,7 @@ module.exports = {
   },
 
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "docs"),
     filename: "[name]-[hash:7].js"
   },
 
@@ -109,13 +109,13 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name]-[hash:7].css"
     }),
-    new PurifyCSSPlugin({
-      // Give paths to parse for rules. These should be absolute!
-      paths: glob.sync([
-        path.join(__dirname, "./src/views/*.js"),
-        path.join(__dirname, "./src/views/**/*.js")
-      ])
-    })
+    // new PurifyCSSPlugin({
+    //   // Give paths to parse for rules. These should be absolute!
+    //   paths: glob.sync([
+    //     path.join(__dirname, "./src/views/*.js"),
+    //     path.join(__dirname, "./src/views/**/*.js")
+    //   ])
+    // })
   ],
   optimization: {
     minimizer: [
