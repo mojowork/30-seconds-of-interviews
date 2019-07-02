@@ -31,7 +31,7 @@ export default ({
         class="btn Question__button"
         onclick={() => actions.onAnswerButtonClick({ name, isOpen })}
       >
-        <span>{isOpen ? "Hide" : "Show"} answer</span>
+        <span>{isOpen ? "隐藏" : "显示"}答案</span>
         <i
           class={cc("Question__button-icon", {
             "is-rotated": isOpen

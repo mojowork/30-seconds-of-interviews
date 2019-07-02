@@ -23,7 +23,7 @@ const state = {
     expertise: "Junior",
     sortAscending: true,
     dropdown: {
-      name: "Category",
+      name: "类别",
       items: [
         {
           name: "All",

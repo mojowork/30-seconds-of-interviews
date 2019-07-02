@@ -5,7 +5,7 @@ import Icon from "./Icon"
 export default () => (state, actions) => (
   <div class="Dropdown">
     <div>
-      <label class="Dropdown__label">Sort by</label>
+      <label class="Dropdown__label">排序</label>
     </div>
     <button
       class="btn Dropdown__button"
