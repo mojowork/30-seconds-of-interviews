@@ -381,11 +381,11 @@
   },
   {
     "name": "css-preprocessors.md",
-    "question": "What are the advantages of using CSS preprocessors?",
-    "answer": "CSS preprocessors add useful functionality that native CSS does not have, and generally make CSS neater and more maintainable by enabling DRY (Don't Repeat Yourself) principles. Their terse syntax for nested selectors cuts down on repeated code. They provide variables for consistent theming (however, CSS variables have largely replaced this functionality) and additional tools like color functions (`lighten`, `darken`, `transparentize`, etc), mixins, and loops that make CSS more like a real programming language and gives the developer more power to generate complex CSS.",
+    "question": "使用 CSS 预处理器带来怎样的好处?",
+    "answer": "CSS 预处理器添加了一些原生 CSS 不具备的有用功能, 并且通过实践 DRY(Dont Repeat Youself) 原则使得 CSS 总体上更整洁, 更加易于维护. 如拥有简洁语法的嵌套选择器功能减少了大量重复代码. 预处理器提供的变量功能使建设一致性的网站主题成为可能(不过, 原生 CSS 变量已经很大程度上取代了这个功能)同时一些其他的工具如颜色函数 (`lighten`, `draken`, `transparentize` 等), 混合 (`mixins`), 循环功能帮助开发者构建更复杂的 CSS, 使得 CSS 更像一个真正的编程语言.",
     "goodToHear": [
-      "They allow us to write more maintainable and scalable CSS",
-      "Some disadvantages of using CSS preprocessors (setup, re-compilation time can be slow etc.)"
+      "CSS 预处理器帮助我们写出更具有可维护性, 可扩展性的 CSS 代码",
+      "使用 CSS 预处理的一些不便因素, 如安装或重编译时长可能很长等"
     ],
     "links": [
       "[CSS Preprocessors](https://medium.com/@garyfagan/css-preprocessors-6f226fa16f27)"
