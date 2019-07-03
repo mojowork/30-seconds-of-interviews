@@ -1082,8 +1082,8 @@
   },
   {
     "name": "media-properties.md",
-    "question": "Can you name the four types of `@media` properties?",
-    "answer": "* `all`, which applies to all media type devices\n* `print`, which only applies to printers\n* `screen`, which only applies to screens (desktops, tablets, mobile etc.)\n* `speech`, which only applies to screenreaders",
+    "question": "你能说出 4 种媒体类型吗?",
+    "answer": "* `all`, 用于所有设备\n* `print`, 用于打印机和打印预览\n* `screen`, 用于电脑屏幕，平板电脑，智能手机等。\n* `speech`, 应用于屏幕阅读器等发声设备",
     "goodToHear": [],
     "links": [
       "[MDN docs for `@media` rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)",
