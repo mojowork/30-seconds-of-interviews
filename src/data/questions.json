@@ -672,8 +672,8 @@
   },
   {
     "name": "focus-ring.md",
-    "question": "What is a focus ring? What is the correct solution to handle them?",
-    "answer": "A focus ring is a visible outline given to focusable elements such as buttons and anchor tags. It varies depending on the vendor, but generally it appears as a blue outline around the element to indicate it is currently focused.\n\nIn the past, many people specified `outline: 0;` on the element to remove the focus ring. However, this causes accessibility issues for keyboard users because the focus state may not be clear. When not specified though, it causes an unappealing blue ring to appear around an element.\n\nIn recent times, frameworks like Bootstrap have opted to use a more appealing `box-shadow` outline to replace the default focus ring. However, this is still not ideal for mouse users.\n\nThe best solution is an upcoming pseudo-selector `:focus-visible` which can be polyfilled today with JavaScript. It will only show a focus ring if the user is using a keyboard and leave it hidden for mouse users. This keeps both aesthetics for mouse use and accessibility for keyboard use.",
+    "question": "什么是聚焦框? 应该怎样正确处理它们?",
+    "answer": "聚焦框是(浏览器给)聚焦状态下的按钮或锚点标签展示的一个可见的轮廓. 不同浏览器下他的样式不一, 不过通常它会在元素周围显示为一道蓝色轮廓，表示它目前处于聚焦状态. \n\n 过去, 很多人会在元素上指定 `outline: 0;` 属性以去除这道聚焦框. 但这会混淆(浏览器的)聚焦状态, 给使用键盘的用户带来可访问性问题. 不过如果不去除聚焦框的话, 元素上那道蓝色轮廓往往十分讨人厌. \n\n 近来, 像 `Bootstrap` 这类框架选用更美观的 `box-shadow` 边框以取代默认的聚焦框. 但是, 这并不是给鼠标用户的最佳解决方案. \n\n 最佳解决方案应该是使用即将退出的伪类选择器 `:focus-visible`, 现在你也可以使用 JavaScript 对它进行兼容. 他只会出现在当用户使用键盘的时候, 若是用户使用鼠标, 它将自动消失. 无论使用鼠标或是键盘, 这对可访问性而言都是优雅的设计.",
     "goodToHear": [],
     "links": [
       "[:focus-visible](https://css-tricks.com/focus-visible-and-backwards-compatibility/)"
