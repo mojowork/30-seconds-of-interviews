@@ -498,10 +498,10 @@
   },
   {
     "name": "em-rem-difference.md",
-    "question": "What is the difference between `em` and `rem` units?",
-    "answer": "Both `em` and `rem` units are based on the `font-size` CSS property. The only difference is where they inherit their values from.\n\n* `em` units inherit their value from the `font-size` of the parent element\n* `rem` units inherit their value from the `font-size` of the root element (`html`)\n\nIn most browsers, the `font-size` of the root element is set to `16px` by default.",
+    "question": "尺寸单位 `em` `rem` 间有什么不同?",
+    "answer": "`em` 和 `rem` 单位都基于 CSS 的 `font-size` 属性. 唯一的不同是它们从不同的地方继承值. \n\n * `em` 单位从父元素的 `font-size` 属性中继承值\n* `rem` 单位从根元素 (`html`) 的 `font-size` 属性中继承值 \n\n 在大多数浏览器中, 根元素的 `font-size` 属性默认值为 `16px`",
     "goodToHear": [
-      "Benefits of using `em` and `rem` units"
+      "使用 `em` `rem` 带来的好处"
     ],
     "links": [
       "[CSS units for font-size: px | em | rem](https://medium.com/code-better/css-units-for-font-size-px-em-rem-79f7e592bb97)"
