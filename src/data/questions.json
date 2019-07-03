@@ -631,8 +631,8 @@
   },
   {
     "name": "flex-layout.md",
-    "question": "Using flexbox, create a 3-column layout where each column takes up a `col-{n} / 12` ratio of the container.\n\n```html\n<div class=\"row\">\n  <div class=\"col-2\"></div>\n  <div class=\"col-7\"></div>\n  <div class=\"col-3\"></div>\n</div>\n```",
-    "answer": "Set the `.row` parent to `display: flex;` and use the `flex` shorthand property to give the column classes a `flex-grow` value that corresponds to its ratio value.\n\n```css\n.row {\n  display: flex;\n}\n\n.col-2 {\n  flex: 2;\n}\n\n.col-7 {\n  flex: 7;\n}\n\n.col-3 {\n  flex: 3;\n}\n```",
+    "question": "请使用 FlexBox 创造一个 3 列布局, 同时满足每列占据容器百分之 `col-{n} / 12` 宽度. \n\n```html\n<div class=\"row\">\n  <div class=\"col-2\"></div>\n  <div class=\"col-7\"></div>\n  <div class=\"col-3\"></div>\n</div>\n```",
+    "answer": "将父元素 `.row` 设置为 `display: flex;` 同时使用 `flex` 简写属性给每一个子类设置与其比例对应的 `flex-grow` 值. \n\n```css\n.row {\n  display: flex;\n}\n\n.col-2 {\n  flex: 2;\n}\n\n.col-7 {\n  flex: 7;\n}\n\n.col-3 {\n  flex: 3;\n}\n```",
     "goodToHear": [],
     "links": [
       "[MDN docs for basic concepts of flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)",
