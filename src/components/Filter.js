@@ -5,8 +5,8 @@ import SortButton from "./SortButton"
 export default () => state => (
   <div class="Filter">
     <div class="container">
-      <Dropdown {...state.filter.dropdown} />
       <SortButton />
+      <Dropdown {...state.filter.dropdown} />
     </div>
   </div>
 )

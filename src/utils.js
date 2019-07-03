@@ -42,7 +42,7 @@ export const nextValInObj = (obj, key) => {
     : i !== -1 && keys[i + 1] && obj[keys[i + 1]]
 }
 
-export const EXPERTISE_STRINGS = [ "easy", "intermediate", "hard" ]
+export const EXPERTISE_STRINGS = [ "简单", "中级", "困难" ]
 
 export const TAG_NAMES = {
   javascript: "JavaScript",

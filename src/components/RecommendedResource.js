@@ -2,18 +2,17 @@ import { h } from "hyperapp"
 
 const RecommendedResource = () => (
   <li class="Question-wrapper is-visible">
-    <div class={"Question__badge"}>Recommended resource</div>
+    <div class={"Question__badge"}>资源推荐</div>
     <div class="Question">
       <h2>
-        <a href="https://frontendmasters.com/books/front-end-handbook/2019/">
-          Frontend Masters Handbook
+        <a href="https://www.yuque.com/ysfe/ykx/fedhb">
+          前端开发手册
         </a>
       </h2>
       <p>
-        This is a guide that anyone could use to learn about the practice of
-        front-end development. It broadly outlines and discusses the practice of
-        front-end engineering: how to learn it and what tools are used when
-        practicing it.
+        这是一本每个人都可以用来学习前端开发实践的指南。
+        它大致总结和讨论了前端工程的实践：
+        如何学习它以及在2019年实践它时会使用到的工具。
       </p>
     </div>
   </li>
