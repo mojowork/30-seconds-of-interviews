@@ -1652,10 +1652,10 @@
   },
   {
     "name": "sprites.md",
-    "question": "What are the advantages of using CSS sprites and how are they utilized?",
-    "answer": "CSS sprites combine multiple images into one image, limiting the number of HTTP requests a browser has to make, thus improving load times. Even under the new HTTP/2 protocol, this remains true.\n\nUnder HTTP/1.1, at most one request is allowed per TCP connection. With HTTP/1.1, modern browsers open multiple parallel connections (between 2 to 8) but it is limited. With HTTP/2, all requests between the browser and the server are multiplexed on a single TCP connection. This means the cost of opening and closing multiple connections is mitigated, resulting in a better usage of the TCP connection and limits the impact of latency between the client and server. It could then become possible to load tens of images in parallel on the same TCP connection.\n\nHowever, according to [benchmark results](https://blog.octo.com/en/http2-arrives-but-sprite-sets-aint-no-dead/), although HTTP/2 offers 50% improvement over HTTP/1.1, in most cases the sprite set is still faster to load than individual images.\n\nTo utilize a spritesheet in CSS, one would use certain properties, such as `background-image`, `background-position` and `background-size` to ultimately alter the `background` of an element.",
+    "question": "如何使用 CSS 精灵图, 使用它带来怎样的好处?",
+    "answer": "CSS 精灵图旨在将将多张图片合成一张, 以限制浏览器发出的 HTTP 请求数量, 从而加快(页面)载入时间. 甚至在使用 HTTP/2 协议时, 使用 CSS 精灵图仍是有意义的. \n\n HTTP/1.1 协议限制了每个 TCP 连接最多允许一个请求. 使用 HTTP/1.1 协议时, 现在浏览器会建立几个(2-8个)并行的连接, 不过其功效有限. 使用 HTTP/2 协议时, 浏览器和服务器之间的所有请求都在一个 TCP 连接上复用. 这意味着可以降低建立和关闭多个连接的成本, 使得更高效使用 TCP 连接, 并减轻了客户端和服务器之间延迟的影响. 也就是说可以在同一 TCP 连接上并行加载数十个图像. \n\n 不过, [基准测试结果](https://blog.octo.com/en/http2-arrives-but-sprite-sets-aint-no-dead/)表明, 尽管 HTTP/2 比 HTTP/1.1 快了 50％, 但在大多数情况下精灵图的加载速度仍然比单个图像快. \n\n 在 CSS 中使用雪碧图, 可以使用诸如 `background-image`, `background-position` 和 `background-size` 等属性以改变元素的 `background` 值.",
     "goodToHear": [
-      "`background-image`, `background-position` and `background-size` can be used to utilize a spritesheet."
+      "制作精灵图需要使用到 `background-image`, `background-position` 及 `background-size` 属性."
     ],
     "links": [
       "[CSS Sprites explained by CSS Tricks](https://css-tricks.com/css-sprites/)"
