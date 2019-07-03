@@ -42,7 +42,7 @@ export default ({
       </button>
       <div class={cc("Question__answer", { "is-open": isOpen })}>
         <Markdown content={answer} />
-        {goodToHear.length > 0 && <h4>Good to hear</h4>}
+        {goodToHear.length > 0 && <h4>希望听到</h4>}
         <ul>{goodToHear.map(i => <Markdown node="li" content={i} />)}</ul>
       </div>
     </div>

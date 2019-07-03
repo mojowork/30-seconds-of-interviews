@@ -59,10 +59,10 @@
   },
   {
     "name": "bem.md",
-    "question": "What is CSS BEM?",
-    "answer": "The BEM methodology is a naming convention for CSS classes in order to keep CSS more maintainable by defining namespaces to solve scoping issues. BEM stands for Block Element Modifier which is an explanation for its structure. A Block is a standalone component that is reusable across projects and acts as a \"namespace\" for sub components (Elements). Modifiers are used as flags when a Block or Element is in a certain state or is different in structure or style.\n\n```css\n/* block component */\n.block {\n}\n\n/* element */\n.block__element {\n}\n\n/* modifier */\n.block__element--modifier {\n}\n```\n\nHere is an example with the class names on markup:\n\n```html\n<nav class=\"navbar\">\n  <a href=\"/\" class=\"navbar__link navbar__link--active\"></a>\n  <a href=\"/\" class=\"navbar__link\"></a>\n  <a href=\"/\" class=\"navbar__link\"></a>\n</nav>\n```\n\nIn this case, `navbar` is the Block, `navbar__link` is an Element that makes no sense outside of the `navbar` component, and `navbar__link--active` is a Modifier that indicates a different state for the `navbar__link` Element.\n\nSince Modifiers are verbose, many opt to use `is-*` flags instead as modifiers.\n\n```html\n<a href=\"/\" class=\"navbar__link is-active\"></a>\n```\n\nThese must be chained to the Element and never alone however, or there will be scope issues.\n\n```css\n.navbar__link.is-active {\n}\n```",
+    "question": "什么是 CSS BEM?",
+    "answer": "BEM 策略是一种通过定义命名空间来解决 CSS 作用域范围问题, 从而使 CSS 更容易维护的 CSS 类名的命名约定. BEM 指代 Block Element Modifier 结构的类名. Block 即可以在项目中重用并给子组件(Element)提供命名空间的独立组件. Modifiers 常在 Block 或 Element 处于某种状态或是在结构样式上不相同是作为一个标记. \n\n```css\n/* block component */\n.block {\n}\n\n/* element */\n.block__element {\n}\n\n/* modifier */\n.block__element--modifier {\n}\n```\n\n 这里有一个带有类名修饰符(Modifiers)的例子: \n\n```html\n<nav class=\"navbar\">\n  <a href=\"/\" class=\"navbar__link navbar__link--active\"></a>\n  <a href=\"/\" class=\"navbar__link\"></a>\n  <a href=\"/\" class=\"navbar__link\"></a>\n</nav>\n```\n\n 这个例子中, `navbar` 即 Block, `navbar__link` Element 使得它只在 `navbar` 中有意义, `navbar__link--active` 是 Modifiers, 它指明了 `navbar__link` Element 的不同状态. \n\n 如果 Modifiers 很冗长的话, 很多人会选择只用 `is-*` 标志, 而不是选用 Modifiers 进行标记. \n\n```html\n<a href=\"/\" class=\"navbar__link is-active\"></a>\n```\n\n 这种标记方法必须和连接到 Element , 与其一同存在, 不然很可能会出现作用域问题. \n\n```css\n.navbar__link.is-active {\n}\n```",
     "goodToHear": [
-      "Alternative solutions to scope issues like CSS-in-JS"
+      "作用域问题的替代解决方案如 CSS-in-JS"
     ],
     "links": [
       "[Writing clean and maintainable CSS](https://hackernoon.com/writing-clean-and-maintainable-css-using-bem-methodology-1dcbf810a664)"

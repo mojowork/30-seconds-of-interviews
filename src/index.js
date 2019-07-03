@@ -74,7 +74,7 @@ const actions = {
 }
 
 const view = (state, actions) => (
-  <div>
+  <div contenteditable>
     <BackToTopButton />
     <Header />
     <Filter />
