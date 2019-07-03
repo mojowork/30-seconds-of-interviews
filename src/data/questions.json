@@ -418,11 +418,11 @@
   },
   {
     "name": "css-specificity.md",
-    "question": "Can you describe how CSS specificity works?",
-    "answer": "Assuming the browser has already determined the set of rules for an element, each rule is assigned a matrix of values, which correspond to the following from highest to lowest specificity:\n\n* Inline rules (binary - 1 or 0)\n* Number of id selectors\n* Number of class, pseudo-class and attribute selectors\n* Number of tags and pseudo-element selectors\n\nWhen two selectors are compared, the comparison is made on a per-column basis (e.g. an id selector will always be higher than any amount of class selectors, as ids have higher specificity than classes). In cases of equal specificity between multiple rules, the rules that comes last in the page's style sheet is deemed more specific and therefore applied to the element.",
+    "question": "你能阐述一下 CSS 选择器权重的工作原理吗?",
+    "answer": "假设浏览器已经确定了元素的规则集, 并未每条规则分配了一个值矩阵, 这些值对应着从高优先级到低优先级的以下内容: \n\n * Inline rules (binary - 1 or 0)\n* ID 选择器的数量\n* 类选择器, 伪类选择器和属性选择器的数量\n* 标签选择器, 伪元素选择器的数量 \n\n 每当选择器进行权重比较时, 比较都会基于上面每列规则(如, 不论有多少个类选择器, ID 选择器的权重永远比类选择器更高, 因为 ID 选择器比类选择器优先级更高) 当出现多个规则间具有相同权重的情况, 页面样式表最后出现的规则被赋予更高的优先级, 并作用到元素上.",
     "goodToHear": [
       "Specificity matrix: [inline, id, class/pseudo-class/attribute, tag/pseudo-element]",
-      "In cases of equal specificity, last rule is applied"
+      "相同权重的规则时, 后者优先"
     ],
     "links": [
       "[CSS Specificity](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)"
