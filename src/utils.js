@@ -32,7 +32,6 @@ export const scrollToTop = (() => {
   }
 })()
 
-console.log('scrollToTop', scrollToTop)
 
 export const nextValInObj = (obj, key) => {
   const keys = Object.keys(obj)

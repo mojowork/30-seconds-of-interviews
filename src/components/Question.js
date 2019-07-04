@@ -31,7 +31,7 @@ export default ({
         class="btn Question__button"
         onclick={() => actions.onAnswerButtonClick({ name, isOpen })}
       >
-        <span>{isOpen ? "Hide" : "Show"} answer</span>
+        <span>{isOpen ? "隐藏" : "展示"}答案</span>
         <i
           class={cc("Question__button-icon", {
             "is-rotated": isOpen
@@ -42,7 +42,7 @@ export default ({
       </button>
       <div class={cc("Question__answer", { "is-open": isOpen })}>
         <Markdown content={answer} />
-        {goodToHear.length > 0 && <h4>Good to hear</h4>}
+        {goodToHear.length > 0 && <h4>加分项</h4>}
         <ul>{goodToHear.map(i => <Markdown node="li" content={i} />)}</ul>
       </div>
     </div>
