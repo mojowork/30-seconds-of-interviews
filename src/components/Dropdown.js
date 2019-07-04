@@ -9,7 +9,7 @@ export default ({ name, items, isOpen }) => state => (
       <label class="Dropdown__label">{name}</label>
     </div>
     <button class="btn Dropdown__button">
-      <span>{state.filter[name.toLowerCase()]}</span>
+      <span>{state.filter.category}</span>
       <Icon class="btn__icon" name="chevron-down" />
     </button>
     <ul
