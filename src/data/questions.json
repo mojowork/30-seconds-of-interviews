@@ -2,11 +2,11 @@
   {
     "name": "alt-attribute.md",
     "question": "image 标签的 alt 属性有什么意义?",
-    "answer": "The `alt` attribute provides alternative information for an image if a user cannot view it. The `alt` attribute should be used to describe any images except those which only serve a decorative purposes, in which case it should be left empty.",
+    "answer": "当图片不能正常展示给用户，`alt` 属性提供一种可替代信息。 所有图片都应该有 `alt` 属性描述，除外只用于装饰目的的图片（背景图等），在这种情况下，`alt` 应该给空值",
     "goodToHear": [
-      "Decorative images should have an empty `alt` attribute.",
-      "Web crawlers use `alt` tags to understand image content, so they are considered important for Search Engine Optimization (SEO).",
-      "Put the `.` at the end of `alt` tag to improve accessibility."
+      "装饰性的图片应该设置 `alt` 为空值",
+      "Web爬虫使用 `alt` 标签来理解图像内容，因此 `alt` 对 搜索引擎优化 (SEO) 很重要。",
+      "在 `alt` 属性内容最后加上 `.` ,可以提高可访问性"
     ],
     "links": [
       "[A good basis for accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML)"
